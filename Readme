@@ -1,0 +1,20 @@
+This is a simple version of ALU. The ALU takes instruction as input and outputs a result of arithmetic and logic operation. In this project SystemVerilog package is used to define a user defined data types. 
+
+Instruction format:  || opcode | operand1 | operand2 ||
+
+opcode is the binary representation of type of instruction such as ADD, SUB, MUL, AND, OR, XOR. 
+operand1 and operand2 are the 32-bit datas on which an operator operates. 
+An illustration of how various fields of an instruction can be shown as result <- operand1 opcode operand2.
+
+#SIMULATION OUTPUT
+# run 1000ns
+SimpleALU out =         18 (expected output =         18)
+SimpleALU out =         14 (expected output =         14)
+SimpleALU out =         32 (expected output =         32)
+SimpleALU out =          0 (expected output =          0)
+SimpleALU out =         18 (expected output =         18)
+SimpleALU out =         18 (expected output =         18)
+SimpleALU out =         64 (expected output =         64)
+SimpleALU out =          4 (expected output =          4)
+$finish called at time : 800 ns : File "/home/
+

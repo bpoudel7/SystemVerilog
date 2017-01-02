@@ -1,0 +1,19 @@
+package definitions;
+
+	parameter OPCODE_COUNT = 8;
+	
+	//the possible opcodes are defined as enumerated data type where ADD = 0 and so on 
+	typedef enum {ADD = 0, SUB, MUL, AND, OR, XOR, SHL, SHR} opcodes_t;
+	
+	typedef struct{
+		logic [31:0] a, b; //operands a and b
+		opcodes_t opcode;  // opcode
+	}instruction_t; //instruction has opcode and operands
+	
+	//this is the code for the multiplier. You can replace the code with your 
+	// own multiplier code
+	function automatic [31:0] multiplier (input [31:0] a, b);
+		return a * b;
+	endfunction
+	
+endpackage
