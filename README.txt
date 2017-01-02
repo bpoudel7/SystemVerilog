@@ -11,9 +11,11 @@ A[2] | A[1] | A[0] | eP | oP|
 1    | 0    |  1   | 0  | 1 |
 1    | 1    |  0   | 0  | 1 |
 1    | 1    |  1   | 1  | 0 |
-     
-so, eP is A[2] ^ A[1] ^ A[0]
-and, oP is ~(A[2] ^ A[1] ^ A[0])
+
+The point to remember is that even parity tries to make the number of 1's in data+parity to be even and odd parity makes the number pf 1's in data+parity to be odd.
+
+so,  eP <=  A[2] ^ A[1] ^ A[0]
+and, oP <= ~(A[2] ^ A[1] ^ A[0])
 
 We have xor reductin operator to generate the even and odd parity.
 
