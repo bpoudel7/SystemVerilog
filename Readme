@@ -1,4 +1,7 @@
-This is a simple version of ALU. The ALU takes instruction as input and outputs a result of arithmetic and logic operation. In this project SystemVerilog package is used to define a user defined data types. 
+Note: The code is written and simulated in Vivado 2015.4
+
+This is a simple version of ALU. This ALU takes instruction as input and outputs a result of arithmetic and logic operation. 
+In this project SystemVerilog package is used to define a user defined data types. 
 
 Instruction format:  || opcode | operand1 | operand2 ||
 
