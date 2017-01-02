@@ -1,6 +1,4 @@
-There are two types of parity codes viz., even parity and odd parity. Parity code is used for transmission error checking
-in serial communication. At the sender end, parity of a message or data is generated and appended at the end of the message.
-And, at the receiver side parity checking is done to check the integrity of the received message. 
+There are two types of parity codes viz., even parity and odd parity. Parity code is used for transmission error checking in serial communication. At the sender end, parity of a message or data is generated and appended at the end of the message. And, at the receiver side parity checking is done to check the integrity of the received message. 
 
 Say A[2:0] is message and eP is even parity and oP is odd parity. Then eP and oP are generated as, 
 
