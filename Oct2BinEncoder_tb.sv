@@ -28,15 +28,15 @@ module Oct2BinEncoder_tb;
     reg [7:0] test_vector;
     
     Oct2BinEncoder O2Ben(	.O0(test_input[0]), 
-    						.O1(test_input[1]), 
-    						.O2(test_input[2]), 
-    						.O3(test_input[3]), 
-    						.O4(test_input[4]), 
-    						.O5(test_input[5]), 
-    						.O6(test_input[6]), 
-    						.O7(test_input[7]),
-    						.B(test_output)
-        			      );
+    				.O1(test_input[1]), 
+    				.O2(test_input[2]), 
+    				.O3(test_input[3]), 
+    				.O4(test_input[4]), 
+    				.O5(test_input[5]), 
+    				.O6(test_input[6]), 
+    				.O7(test_input[7]),
+    				.B(test_output)
+        		);
 	
 	initial 
 	begin
