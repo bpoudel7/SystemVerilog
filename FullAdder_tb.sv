@@ -23,21 +23,21 @@
 module FullAdder_tb;
     
     reg test_InA;
-	reg test_InB;
-	reg test_Cin;
-	
-	wire test_Sum;
-	wire test_CarryOut;
+    reg test_InB;
+    reg test_Cin;
+
+    wire test_Sum;
+    wire test_CarryOut;
 	    
     reg [2:0] test_var;
     int i;
     reg expectedSum, expectedCarry;
     
     FullAdder FA(	.InA(test_InA),
-    				.InB(test_InB),
-    				.Cin(test_Cin),
-    				.Sum(test_Sum),
-    				.CarryOut(test_CarryOut)
+    			.InB(test_InB),
+    			.Cin(test_Cin),
+    			.Sum(test_Sum),
+    			.CarryOut(test_CarryOut)
         	     );
 	
 	initial
