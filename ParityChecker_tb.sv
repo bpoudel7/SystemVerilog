@@ -31,11 +31,11 @@ module ParityChecker_tb;
     reg expectedErrorEven, expectedErrorOdd; 
     
     ParityChecker pc(	    .receivedData(test_receivedData), 
-    						.recEvenParity(test_recEvenParity),
-    						.recOddParity(test_recOddParity),
-    						.isErrorEven(test_isErrorEven),
-    						.isErrorOdd(test_isErrorOdd)
-        				);
+    			    .recEvenParity(test_recEvenParity),
+    			    .recOddParity(test_recOddParity),
+    			    .isErrorEven(test_isErrorEven),
+    			    .isErrorOdd(test_isErrorOdd)
+        	    );
 	initial
 	begin
 		test_receivedData  = 64'h0; 
