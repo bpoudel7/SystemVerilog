@@ -20,8 +20,8 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 module ParityGenerator(	input wire [63:0] dataInput,
-						output wire evenParity,
-						output wire oddParity
+			output wire evenParity,
+			output wire oddParity
     				  );
 	assign evenParity = ^dataInput; //using reduction xor operator
 	assign oddParity  = ~(^dataInput);
