@@ -20,11 +20,11 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 module ParityChecker(	input  wire [63:0] receivedData, 
-						input  wire recEvenParity,
-						input  wire recOddParity,
-						output reg isErrorEven,
-						output reg isErrorOdd
-    				);
+			input  wire recEvenParity,
+			input  wire recOddParity,
+			output reg isErrorEven,
+			output reg isErrorOdd
+    		     );
 	reg temp;
 	
 	always_comb
