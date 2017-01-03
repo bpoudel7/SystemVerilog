@@ -29,10 +29,10 @@ module Comparator_tb;
     reg expGt, expLt, expEq;
     
     Comparator cmp( .A(test_A),
-    				.B(test_B),
-    				.gt(test_gt),
-    				.lt(test_lt),
-    				.eq(test_eq)
+    		    .B(test_B),
+    		    .gt(test_gt),
+    		    .lt(test_lt),
+    		    .eq(test_eq)
                    );
 	initial
 	begin
