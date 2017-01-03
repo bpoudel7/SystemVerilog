@@ -21,11 +21,11 @@
 
 
 module Multiplexer( input  wire [7:0] InA,
-					input  wire [7:0] InB,
-					input  wire [7:0] InC,
-					input  wire [7:0] InD,
-					input  wire [1:0] Sel,
-					output reg  [7:0] ValOut
+		    input  wire [7:0] InB,
+		    input  wire [7:0] InC,
+		    input  wire [7:0] InD,
+		    input  wire [1:0] Sel,
+		    output reg  [7:0] ValOut
                   );
 
 	always_comb
