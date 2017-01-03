@@ -20,11 +20,11 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 module Comparator( 	input wire [3:0] A,
-					input wire [3:0] B,
-					output reg gt, //greater than
-					output reg lt, //less than
-					output reg eq
-    			  );
+			input wire [3:0] B,
+			output reg gt, //greater than
+			output reg lt, //less than
+			output reg eq
+    	          );
 	
 	always_comb
 	begin
