@@ -34,11 +34,11 @@ module Multiplexer_tb;
     reg [1:0] sel;
     int i; 
     Multiplexer mux4to1 ( 	.InA(test_InA),
-    						.InB(test_InB),
-    						.InC(test_InC),
-    						.InD(test_InD),
-    						.Sel(test_Sel),
-    						.ValOut(test_ValOut)
+    				.InB(test_InB),
+    				.InC(test_InC),
+    				.InD(test_InD),
+    				.Sel(test_Sel),
+    				.ValOut(test_ValOut)
                         );
 	initial
 	begin
