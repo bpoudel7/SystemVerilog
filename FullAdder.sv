@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
-// Engineer: 
+// Engineer: Bikash Poudel
 // 
 // Create Date: 01/02/2017 04:37:25 PM
 // Design Name: 
@@ -20,10 +20,10 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 module FullAdder(	input  wire InA,
-					input  wire InB,
-					input  wire Cin,
-					output wire Sum,
-					output wire CarryOut
+			input  wire InB,
+			input  wire Cin,
+			output wire Sum,
+			output wire CarryOut
     			);
 	
 	assign Sum = InA ^ InB ^ Cin;
