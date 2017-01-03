@@ -23,15 +23,15 @@
 module ParityGenerator_tb;
     
     reg [63:0] 	test_dataInput;
-    wire 		test_evenParity;
-    wire 		test_oddParity;
+    wire 	test_evenParity;
+    wire 	test_oddParity;
     
     reg expectedOutput;
     
     ParityGenerator pg(	.dataInput(test_dataInput),
-						.evenParity(test_evenParity),
-						.oddParity(test_oddParity)
-    					);
+			.evenParity(test_evenParity),
+			.oddParity(test_oddParity)
+    		      );
     
     initial 
     begin
