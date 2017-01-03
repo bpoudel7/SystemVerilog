@@ -20,8 +20,8 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 module Oct2BinEncoder(	input  wire O0, O1, O2, O3, O4, O5, O6, O7,
-						output reg [2:0] B
-    			      );
+			output reg [2:0] B
+    		     );
 	
 	reg [7:0] octalSymbols;
 	
