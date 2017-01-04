@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
-// Engineer: 
+// Engineer: Bikash Poudel
 // 
 // Create Date: 01/02/2017 06:55:23 PM
 // Design Name: 
