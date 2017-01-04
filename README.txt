@@ -38,9 +38,9 @@ Boolean Equation for above truth table,
 
 warningBuzzer = (isIgnitionOn & isDriverDrowsy) | (isIgnitionOn & seatBeltOn) | (isIgnitionOn & doorLocked);    
 
-======================================================================================================================================
-========================================= Car Warning System Version 1 using boolean equation ========================================
-======================================================================================================================================
+============================================================================================================================
+========================================= Car Warning System Version 1 using boolean equation ==============================
+============================================================================================================================
     module CarWarningSystemV1(      input  doorLocked,       // 0: No, 1: yes 
                                     input  seatBeltOn,      // 0: No, 1: yes
                                     input  isDriverDrowsy, // 0: No, 1: yes
@@ -51,19 +51,19 @@ warningBuzzer = (isIgnitionOn & isDriverDrowsy) | (isIgnitionOn & seatBeltOn) | 
         assign warningBuzzer = (isIgnitionOn & isDriverDrowsy) | (isIgnitionOn & seatBeltOn) | (isIgnitionOn & doorLocked);                         
                             
     endmodule
-**************************************************************************************************************************************
+****************************************************************************************************************************
 
 
-======================================================================================================================================
-========================================= Car Warning System Version 2 using always_comb =============================================
-======================================================================================================================================
+============================================================================================================================
+========================================= Car Warning System Version 2 using always_comb ===================================
+============================================================================================================================
     module CarWarningSystemV2(  input  doorLocked,       // 0: No, 1: yes 
                             input  seatBeltOn,          // 0: No, 1: yes
                             input  isDriverDrowsy,     // 0: No, 1: yes
                             input  isIgnitionOn,      // 0: No, 1: yes
                             output reg warningBuzzer //the output type is "reg" OR it won't synthesize
-                        );                  //So, if you need temporary variables inside always_comb that need to be "register" 
-                                           //The resulting comb ckts end up having multiple registers or memory = NOT PERFECT COMB CKT 
+                        );        //So, if you need temporary variables inside always_comb that need to be "register" 
+                                 //The resulting comb ckts end up having multiple registers or memory = NOT PERFECT COMB CKT 
     always_comb
     begin
         warningBuzzer = 1'b0;
@@ -76,18 +76,18 @@ warningBuzzer = (isIgnitionOn & isDriverDrowsy) | (isIgnitionOn & seatBeltOn) | 
                         
 endmodule    
 
-**************************************************************************************************************************************
+****************************************************************************************************************************
 
-======================================================================================================================================
-========================================= Car Warning System Version 1 using function (A better way) =================================
-======================================================================================================================================
+============================================================================================================================
+========================================= Car Warning System Version 1 using function (A better way) =======================
+============================================================================================================================
 
     module CarWarningSystemV3(  input  doorLocked,       // 0: No, 1: yes 
                                 input  seatBeltOn,      // 0: No, 1: yes
                                 input  isDriverDrowsy, // 0: No, 1: yes
                                 input  isIgnitionOn,  // 0: No, 1: yes
                                 output warningBuzzer //the output type is "wire"
-                            );       //IMPORTANT NOTE: the core logic is same as that of V2 but the output is of type "wire" not "reg"
+                       ); //IMPORTANT NOTE: the core logic is same as that of V2 but the output is of type "wire" not "reg"
         
         assign warningBuzzer = myCarWarning(doorLocked, seatBeltOn, isDriverDrowsy, isIgnitionOn);  
         
@@ -104,5 +104,5 @@ endmodule
         endfunction                
     endmodule
 
-**************************************************************************************************************************************
+****************************************************************************************************************************
 
