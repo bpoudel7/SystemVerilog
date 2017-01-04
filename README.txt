@@ -11,6 +11,11 @@ a combinational circuit, then the output variable should be a registers type
 variable. A combinational circuit with a register type output is not a pure 
 combinational circuit, but, it is a sequential circuit.
 
+In the following we design a combinatinal circuit using three methods. All of 
+these methods generates same combinational circuit as shown in the 
+CarWarningSystemV1_RTL_Schematic.png diagram. The truth table for our
+car warning system is as follow,
+
 ----------------------------------------------------------------------------  
 |                           Input                         ||    Output     |
 ----------------------------------------------------------------------------  
