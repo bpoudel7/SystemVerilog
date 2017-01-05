@@ -27,6 +27,7 @@ module UpDownCounter(   input clock,
                     );
     reg [3:0] cnt;
     
+    //always block to reset the counter
     always @(reset, upDown)
     begin
         
@@ -40,6 +41,7 @@ module UpDownCounter(   input clock,
         end               
     end
     
+    //counter block
     always_ff @ (posedge clock)
     begin    
         if(upDown == 1'b1) begin
