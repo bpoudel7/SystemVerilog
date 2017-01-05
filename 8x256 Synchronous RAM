@@ -1,0 +1,52 @@
+8x256 RAM has a capacity of storing 256 8-bit data as shown below.
+
+255  |<----- 8-bit ----->| 
+     |                   |
+  .  |                   |
+  .  |                   |
+  .  |                   |
+  6  |                   |  
+  5  |     8x256 RAM     |   
+  4  |                   |
+  3  |                   |
+  2  |                   |
+  1  |                   |
+  0  |                   | 
+     ---------------------
+
+In order to address this memory,  we need 8-bit address line. So, the
+data input is 8-bit wide and address input is also 8-bit wide. The port 
+signals are,
+
+chipSel:     chip select, this RAM operates whenever CS is '1'
+readData:    read signal
+writeData:   write signal
+outDataLine: 8-bit output port for data output
+inDataLine:  8-bit input port for input data
+addrLine:    8-bit address line
+clock:       clock signal
+
+The SYNCHRONOUS SRAM operates based on the clock while ASYNCHRONOUS SRAM
+operates based on events on clock, and other control signals which in
+our case are chipSel, readData, writeData. 
+
+In this particular design, we have incorporated PARAMETER to define the
+width of the input and output ports. Using PARAMETER makes your design 
+scalable in that we can adjust the size of the port during future instantiation
+as shown in the following,
+
+RAM8x256 #(16, 16, 65536) SRAM16x65536(      .addrLine( ... ), 
+                                             .inDataLine( ... ),
+                                             .clock( ... ),
+                                             .chipSel( ... ),
+                                             .readData( ... ),
+                                             .writeData( ... ),
+                                             .outDataLine( ... )
+                                     );
+  
+
+Now, when you instantiate a parameterized system verilog module as shown above, the RAM is 
+no more 8x256 SRAM but it is 16x65536 SRAM. The value of ADDR_WD is 16, DATA_WD is 16, and
+DEPTH is 65536.
+
+      
